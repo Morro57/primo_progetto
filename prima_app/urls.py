@@ -1,0 +1,11 @@
+from django.urls import path
+from prima_app.views import homepage,welcome,lista,ChiSiamo
+
+app_name = "prima_app"
+urlpatterns = [
+    path('',homepage, name ='hompage'),
+    path('welcome',welcome, name = 'welcome'),
+    path('lista',lista,name = 'lista'),
+    path('chi_siamo',ChiSiamo,name = 'ChiSiamo')
+
+]
