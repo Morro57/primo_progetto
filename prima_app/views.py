@@ -10,5 +10,16 @@ def welcome(request):
 def lista(request):
     return render(request,"prima_app/lista.html")
 
-def ChiSiamo(request):
+def chi_siamo(request):
     return render(request,"prima_app/chi_siamo.html")
+
+def variabili(request):
+    context={
+        'var1':'Prima Variabile',
+        'var2':'Seconda Variabile',
+        'var3':'Terza Variabile',
+    }
+    return render(request,"variabili.html",context)
+
+def index(request):
+    return render(request,"prima_app/index.html")
