@@ -1,9 +1,9 @@
 {% extends "base.html"%}
 
-{%block title%} {{block.super}} | Index {%endblock title%}
+{%block title%} Index {%endblock title%}
 
 {%block content%}
-<ol>
+    <ol>
         <li><a href="{% url 'prima_app:homepage'%}">Home page benvenuto</a></li>
         <li><a href="{% url 'prima_app:welcome'%}">welcome</a></li>
         <li><a href="{% url 'prima_app:lista'%}">Lista</a></li>

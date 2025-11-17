@@ -3,7 +3,7 @@ from prima_app.views import homepage,welcome,lista,chi_siamo,variabili,index
 
 app_name = "prima_app"
 urlpatterns = [
-    path('',index,name="index"),
+    path('index1',index,name="index1"),
     path('homepage',homepage, name ='homepage'),
     path('welcome',welcome, name = 'welcome'),
     path('lista',lista,name = 'lista'),
