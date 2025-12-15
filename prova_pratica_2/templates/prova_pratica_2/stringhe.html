@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Stringhe {% endblock title %}
+
+{% block content %}
+    {% for parola,lunghezza in lista %}
+
+        {% if lunghezza >= 5 %}
+            <p style="color: blue">{{parola}}</p>
+        {% elif lunghezza < 5 %}
+            <p style="color:orange">{{parola}}</p>
+    
+        {% endif %}
+    {% endfor %}
+
+    <p>Numero di parole con 5 o più lettere: {{contMagg}}</p>
+    <p>Numero di parole con meno di 5 lettere: {{contMin}}</p>
+{% endblock content %}

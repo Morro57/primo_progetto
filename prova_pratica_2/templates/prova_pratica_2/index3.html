@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock title %}
+
+{% block content %} 
+    <ol>
+        <li><a href="{% url 'prova_pratica_2:media'%}">Media</a></li>
+        <li><a href="{% url 'prova_pratica_2:stringhe'%}">Stringhe</a></li>
+    </ol>
+{% endblock content %}

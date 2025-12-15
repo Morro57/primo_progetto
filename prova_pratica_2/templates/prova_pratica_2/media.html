@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %} Media {% endblock title %}
+
+{% block content %}
+
+{% if n1 > n2 and n1 > n3 %}
+    
+        {% if  n2 > n3 %}
+            <span style="color: green;">{{n1}}</span>, 
+            <span>{{n2}}</span>, 
+            <span style="color: red;">{{n3}}</span>
+        {% else %}
+            <span style="color: green;">{{n1}}</span>, 
+            <span style="color: red;">{{n2}}</span>, 
+            <span>{{n3}}</span>
+
+    {% endif %}
+
+{% elif n2 > n1 and n2 > n3%}
+    
+    
+    {% if  n1 > n3 %}
+        <span>{{n1}}</span>,
+        <span style="color: green;">{{n2}}</span>,
+        <span style="color: red;">{{n3}}</span>
+    {% else %}
+       
+        <span style="color: red;">{{n1}}</span>, 
+        <span style="color: green;">{{n2}}</span>, 
+        <span>{{n3}}</span>
+
+    {% endif %}
+
+{% elif n3 > n1  and n3 > n2%}
+    
+    {% if  n1 > n2 %}
+        <span>{{n1}}</span>, 
+        <span style="color: red;">{{n2}}</span>, 
+        <span style="color: green;">{{n3}}</span>
+    {% else %}
+         <span style="color: red;">{{n1}}</span>, 
+         <span>{{n2}}</span>, 
+         <span style="color: green;">{{n3}}</span>
+
+    {% endif %}
+{% endif %}
+
+<p>{{media}}</p>
+
+
+
+{% endblock content %}
