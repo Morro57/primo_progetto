@@ -84,11 +84,13 @@
                 </a>
 
              <div class="dropdown-menu" aria-labelledby="newsDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'news:index'%}">Index</a>
                     <a class="dropdown-item" href="{% url 'news:homeview'%}">homeview</a>
-                    <a class="dropdown-item" href="{% url 'news:articolo_detail' 2%}">Dettagli Articoli</a>
+                    {#<a class="dropdown-item" href="{% url 'news:articolo_detail' 2%}">Dettagli Articoli</a>#}
                     <a class="dropdown-item" href="{% url 'news:lista_articolo'%}">Lista Articoli</a>
                     <a class="dropdown-item" href="{% url 'news:query_base'%}"> Query</a>
-                </div>
+                    <a class="dropdown-item" href="{% url 'news:giornalista_detail' 1%}">Dettagli giornalista</a>
+                    
             </li>
 
         </ul>

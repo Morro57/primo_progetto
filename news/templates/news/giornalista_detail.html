@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Dettagli di un giornalista
+{% endblock title %}
+
+{% block content %}
+    <h3>Nome: {{ giornalista.nome }}</h3>
+    <h3>Cognome: {{ giornalista.cognome }}</h3>
+    <h3>Anno di nascita: {{ giornalista.anno_di_nascita }}</h3>
+{% endblock content %}

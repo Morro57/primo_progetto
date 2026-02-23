@@ -3,9 +3,13 @@
 {%block title%} Index root{%endblock title%}
 
 {%block content%}
+<h3><strong>PRIMO PROGETTO - ROOT MENU'</strong></h3>
      <ol>
         <li><a href="/admin">Pannello admin</a></li>
         <li><a href="{% url 'prima_app:index1'%}">Index prima app</a></li>
+        <li><a href="{% url 'seconda_app:index'%}">Index seconda app</a></li>
+        <li><a href="{% url 'prova_pratica_2:index'%}">Index prova pratica 2</a></li>
+        <li><a href="{% url 'news:index'%}">Index news</a></li>
     </ol>
     
 {%endblock content%}

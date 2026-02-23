@@ -3,6 +3,9 @@ import datetime
 from.models import Articolo, Giornalista
 # Create your views here.
 
+def index(request):
+    return render(request,"news/index_news.html")
+
 def home(request):
     articoli =Articolo.objects.all()
     giornalisti = Giornalista.objects.all()
@@ -28,6 +31,11 @@ def listaArticoli(request,pk=None):
     "giornalisti" : giornalisti
     }
     return render(request, "news/lista_articoli.html",context)
+
+def giornalistaDetailView(request,pk):
+    giornalista = get_object_or_404(Giornalista,pk=pk)
+    context = {"giornalista": giornalista}
+    return render(request,"news/giornalista_detail.html",context)
 
 
 def queryBase(request):
