@@ -90,6 +90,24 @@
                     <a class="dropdown-item" href="{% url 'news:lista_articolo'%}">Lista Articoli</a>
                     <a class="dropdown-item" href="{% url 'news:query_base'%}"> Query</a>
                     <a class="dropdown-item" href="{% url 'news:giornalista_detail' 1%}">Dettagli giornalista</a>
+            </div>
+            
+                    
+            </li>
+
+            <li class="nav-item dropdown">
+                <!-- Dropdown seconda app-->
+                <a class="nav-link dropdown-toggle" href="#" id="newsDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    voti
+                </a>
+
+             <div class="dropdown-menu" aria-labelledby="newsDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'voti:index_voti'%}">Index voti</a>
+                    <a class="dropdown-item" href="{% url 'voti:materie'%}">materie</a>
+                    
+            </div>
+            
                     
             </li>
 

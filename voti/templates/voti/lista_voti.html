@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{%block title%}Voti e Assenze {%endblock title%}
+<p>{{voti}}</p>
+<ol>
+    
+
+    {% for  nome,pagella in voti.items %}
+    <li>{{nome}}</li>
+        {% for materia,voto,assenze in pagella%}
+            <ul>
+                <li>{{materia}},{{voto}},{{assenze}}</li>
+            </ul>
+        {% endfor %}
+    {% endfor %}
+
+{%block content%}
+{%endblock content%}

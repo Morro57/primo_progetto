@@ -61,11 +61,10 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates/prima_app'),
                  os.path.join(BASE_DIR, 'seconda_app/templates/seconda_app'),
-                 os.path.join(BASE_DIR, 'news/templates'),
                  os.path.join(BASE_DIR,'templates'),
                  os.path.join(BASE_DIR,'prova_pratica_2/templates/prova_pratica_2'),
-                 os.path.join(BASE_DIR,'news/template/news'),
-                 os.path.join(BASE_DIR,'voti,template,voti')],
+                 os.path.join(BASE_DIR,'news/templates/news'),
+                 os.path.join(BASE_DIR,'voti/templates/voti')],
                 
 
         'APP_DIRS': True,
