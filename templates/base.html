@@ -56,6 +56,7 @@
                     Seconda App
                 </a>
                 <div class="dropdown-menu" aria-labelledby="secondaAppDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'seconda_app:index'%}">Index</a>
                     <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">Esempio If</a>
                     <a class="dropdown-item" href="{% url 'seconda_app:if_else_elif'%}">Esempio If Else e Elif</a>
                     <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">Esempio for</a>
@@ -105,7 +106,10 @@
              <div class="dropdown-menu" aria-labelledby="newsDropdownMenuLink">
                     <a class="dropdown-item" href="{% url 'voti:index_voti'%}">Index voti</a>
                     <a class="dropdown-item" href="{% url 'voti:materie'%}">materie</a>
-                    
+                    <a class="dropdown-item" href="{% url 'voti:lista_voti'%}">Voti e assenze</a>
+                    <a class="dropdown-item" href="{% url 'voti:media_voti'%}">Media voti</a>
+                    <a class="dropdown-item" href="{% url 'voti:lista_max_min'%}">Voti min e max</a>
+
             </div>
             
                     

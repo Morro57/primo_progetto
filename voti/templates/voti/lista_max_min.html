@@ -1,7 +1,23 @@
 {% extends "base.html" %}
 
-{%block title%} Index news{%endblock title%}
+{%block title%}Lista voti min e max{%endblock title%}
 
 {%block content%}
+
+    {% for nome,voto,materie in listaMax %}
+        <ul>
+            <li>Voto massimo:{{voto}}</li>
+            <li>Materie con voto massimo:{{materie}}</li>
+            <li>Studenti con voto massimo:{{nome}}</li>
+        </ul>
+
+    {% endfor %}
+    {% for nome,voto,materie in listaMin %}
+        <ul>
+            <li>Voto minimo:{{voto}}</li>
+            <li>Materie con voto minimo:{{materie}}</li>
+            <li>Studenti con voto minimo:{{nome}}</li>
+        </ul>
+    {% endfor %}
     
 {%endblock content%}
