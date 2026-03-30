@@ -1,6 +1,6 @@
-[% extends "base.html" %}
+{% extends "base.html" %}
 {% block content %}
-[% if form.errors %}
+{% if form.errors %}
     <p> Username e Password non combaciano: riprova! </p>
 {% endif %}
 <form method="post" action="{% url 'login' %}">
