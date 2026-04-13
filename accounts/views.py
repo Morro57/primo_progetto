@@ -8,17 +8,13 @@ def signup(request):
         form = SignUpForm(request.POST)
 
         if form.is_valid():
+            #form.save()
             user= form.save()
             login(request,user)
-            return redirect('/')
+            return redirect('login')
         
     else:
         form = SignUpForm()
 
-    return render(request,'registration/singup.html',{'form' : form})
+    return render(request,'registration/signup.html',{'form':form})
 
-
-        
-
-
-# Create your views here.
