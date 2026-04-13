@@ -2,11 +2,12 @@ import requests
 from django.shortcuts import render
 
 def todos_view(request):
-
+    #lista_todos=[]
     try:
         response = requests.get('https://jsonplaceholder.typicode.com/todos/')
         if response.status_code == 200:
             lista_todos = response.json()
+            print(lista_todos)
             messaggio_errore = None
         else:
             lista_todos = []
